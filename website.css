@@ -277,7 +277,7 @@ a.mx-2:hover {
   position: relative
 } 
 
-a.mx-2:hover span {
+a.mx-2:hover span.tooltiptext {
   display: block;
   background-color: #555;
   text-align: center;
@@ -290,7 +290,7 @@ a.mx-2:hover span {
   text-decoration: none;
 }
 
-a.mx-2 span::after {
+a.mx-2 span.tooltiptext::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -303,6 +303,19 @@ a.mx-2 span::after {
 
 .contact-section .social a:active {
   color: #fff;
+}
+
+a.mx-2:active span.phone {
+  display: block;
+  background-color: #555;
+  text-align: center;
+  border-radius: 6px;
+  z-index: 1;
+  bottom: 120%;
+  left: -120%;
+  width: 170px;
+  position: absolute;
+  text-decoration: none;
 }
 
 a.mx-2:active span {
